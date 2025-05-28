@@ -1,0 +1,11 @@
+order_id,customer_id,order_date,shipping_address,items,status,shipping_method
+ORD-12345678,CUST-001,2023-10-15,"123 Main St, Anytown, US","{""prod1"": 2, ""prod2"": 1}",shipped,express
+ORD-23456789,CUST-002,2023-10-16,"456 Oak Ave, Somewhere, US","{""prod3"": 1}",processing,standard
+ORD-34567890,CUST-003,,"789 Pine Rd, Nowhere, US","{""prod1"": 3, ""prod4"": 2}",delivered,overnight
+ORD-45678901,CUST-004,2023-10-18,"101 Cedar Ln, Anywhere, US",invalid,pending,international
+ORD-56789012,CUST-005,,,,cancelled,express
+ORD-67890123,CUST-006,2023-10-20,"303 Birch Blvd, Elsewhere, US","{""prod2"": 1, ""prod5"": 4}",shipped,overnight
+ORD-78901234,CUST-007,2023-10-21,"404 Elm St, Anywhere, US","{""prod6"": 2}",pending,standard
+ORD-89012345,CUST-008,2023-10-22,"505 Maple Dr, Somewhere, US","{""prod7"": 1, ""prod8"": 1}",processing,international
+ORD-90123456,,2023-10-23,"606 Oak Ct, Anytown, US","{""prod9"": 5}",pending,express
+ORD-01234567,CUST-010,2023-10-24,"707 Pine Pl, Nowhere, US","{""prod10"": 3}",cancelled,standard

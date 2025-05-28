@@ -1,0 +1,11 @@
+supplier_id,name,address,contact_email,phone,rating
+SUP-12345,Abc Manufacturing,123 Main STREET. SUITE 100,info@abcmanufacturing.com,+15551234567,4.8
+SUP-12346,Def Supplies,456 Oak ROAD,sales@defsupplies.com,+1-555-234-5678,3.5
+SUP-12347,Ghi Industries Inc.,,support@ghi-industries.com,+15553456789,
+SUP-12348,Jkl Distributors,789 Pine AVENUE,jkl.dist@example,+1-555-456-7890,5.5
+SUP-12349,Mno Wholesalers,101 Cedar BOULEVARD APARTMENT 5B,mno_wholesale@example.com,+442012345678,4.2
+SUP-12350,Pqr Suppliers,202 Birch STREET,pqr@suppliers.com,+15555678901,2.8
+SUP-12351,Stuv Corporation,303 maple LANE EAST,stuv@example.com,+1-555-678-9012,-1.0
+SUP-12352,Wxyz Logistics,,wxyz@logistics.com,+15557890123,3.9
+SUP-12353,Acme Supply Co.,505 Spruce ROAD,acme.supply@example.com,7890123,4.7
+SUP-12354,Best Parts Inc,606 Elm STREET WEST,best.parts@example.com,+15558901234,3.2
