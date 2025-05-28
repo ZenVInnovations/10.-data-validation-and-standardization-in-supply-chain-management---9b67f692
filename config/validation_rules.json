@@ -1,0 +1,110 @@
+{
+  "inventory_data": {
+    "product_id": {
+      "type": "string",
+      "required": true,
+      "pattern": "^[A-Z]{3}\\d{6}$",
+      "description": "Product ID in format AAA123456"
+    },
+    "quantity": {
+      "type": "integer",
+      "required": true,
+      "min": 0,
+      "description": "Current inventory quantity"
+    },
+    "unit_price": {
+      "type": "float",
+      "required": true,
+      "min": 0.01,
+      "description": "Unit price in standard currency"
+    },
+    "location_code": {
+      "type": "string",
+      "required": true,
+      "allowed": ["WH-A", "WH-B", "WH-C", "WH-D", "WH-E"],
+      "description": "Warehouse location code"
+    },
+    "expiry_date": {
+      "type": "date",
+      "required": false,
+      "description": "Product expiry date (if applicable)"
+    }
+  },
+  "supplier_data": {
+    "supplier_id": {
+      "type": "string",
+      "required": true,
+      "pattern": "^SUP-\\d{5}$",
+      "description": "Supplier ID in format SUP-12345"
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "description": "Supplier company name"
+    },
+    "address": {
+      "type": "string",
+      "required": true,
+      "description": "Physical address"
+    },
+    "contact_email": {
+      "type": "string",
+      "required": true,
+      "pattern": "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$",
+      "description": "Contact email address"
+    },
+    "phone": {
+      "type": "string",
+      "required": true,
+      "pattern": "^\\+?[0-9\\s()-]{10,20}$",
+      "description": "Contact phone number"
+    },
+    "rating": {
+      "type": "float",
+      "required": false,
+      "min": 0,
+      "max": 5,
+      "description": "Supplier quality rating (0-5)"
+    }
+  },
+  "order_data": {
+    "order_id": {
+      "type": "string",
+      "required": true,
+      "pattern": "^ORD-\\d{8}$",
+      "description": "Order ID in format ORD-12345678"
+    },
+    "customer_id": {
+      "type": "string",
+      "required": true,
+      "description": "Customer identifier"
+    },
+    "order_date": {
+      "type": "date",
+      "required": true,
+      "description": "Date when order was placed"
+    },
+    "shipping_address": {
+      "type": "string",
+      "required": true,
+      "description": "Shipping destination address"
+    },
+    "items": {
+      "type": "list",
+      "required": true,
+      "description": "List of ordered items"
+    },
+    "status": {
+      "type": "string",
+      "required": true,
+      "allowed": ["pending", "processing", "shipped", "delivered", "cancelled"],
+      "description": "Current order status"
+    },
+    "shipping_method": {
+      "type": "string",
+      "required": true,
+      "allowed": ["standard", "express", "overnight", "international"],
+      "description": "Selected shipping method"
+    }
+  }
+} 
